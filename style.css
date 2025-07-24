@@ -21,6 +21,9 @@
 .light-dark-5 {
   color: rgba(0, 0, 0, 0.5);
 }
+.white {
+  color: white;
+}
 .primary-btn {
   background-color: rgba(233, 90, 8, 1);
   color: #ffffff;
@@ -95,6 +98,74 @@
 .card-img {
   width: 100%;
 }
+
+/* flower-plant-lover-section */
+.flower-plant-lover-section {
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 140px auto;
+  gap: 5.75rem;
+}
+.flower-store-img {
+  width: 100%;
+}
+.plant-lover-section-title {
+  font-size: 3.1rem;
+  font-weight: bold;
+  max-width: 540px;
+}
+.lover-desc {
+  padding-left: 30px;
+  font-size: 1.2rem;
+}
+.lover-desc li {
+  margin-top: 50px;
+}
+
+/* latest-deal-section */
+.latest-deal-section {
+  text-align: center;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.latest-deal-title {
+  font-size: 3.1rem;
+  font-weight: bold;
+}
+.latest-deal-desc {
+  font-size: 1.2rem;
+}
+.latest-deal-title,
+.latest-deal-desc {
+  margin-bottom: 30px;
+}
+
+/* join section */
+.join-section {
+  background-image: url("./assets/news-letter-bg.png");
+  background-size: cover;
+  height: 535px;
+  text-align: center;
+  align-content: center;
+}
+.join-title {
+  font-size: 3.1rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.input-button input {
+  height: 3.1rem;
+  width: 45%;
+  padding-left: 50px;
+}
+.input-button button {
+  height: 3.2rem;
+  background-color: rgba(233, 90, 8, 1);
+  border: none;
+  width: 25%;
+  font-size: 1rem;
+}
+
 /* Responsive Styles for mobile Device */
 @media screen and (max-width: 576px) {
   .navbar {
@@ -122,5 +193,11 @@
   .plants-buy-cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+  .flower-plant-lover-section {
+    flex-direction: column;
+  }
+  .plant-lover-section-title {
+    font-size: 2.5rem;
   }
 }
