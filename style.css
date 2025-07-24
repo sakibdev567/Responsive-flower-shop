@@ -140,13 +140,69 @@
   margin-bottom: 30px;
 }
 
+.promo-container {
+  display: flex;
+  max-width: 1140px;
+  margin: 40px auto;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.left-column {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.promo-card,
+.right-column {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+  height: 200px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-column {
+  width: 66.66%;
+  height: 100%;
+  min-height: 420px;
+}
+
+.promo-text {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.promo-text h2,
+.promo-text h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.promo-text a {
+  margin-top: 10px;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  border-radius: 2px solid white;
+}
+
 /* join section */
 .join-section {
   background-image: url("./assets/news-letter-bg.png");
   background-size: cover;
+  width: 100%;
   height: 535px;
   text-align: center;
   align-content: center;
+  position: relative;
 }
 .join-title {
   font-size: 3.1rem;
@@ -199,5 +255,15 @@
   }
   .plant-lover-section-title {
     font-size: 2.5rem;
+  }
+  .promo-container {
+    flex-direction: column;
+  }
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+  .right-column {
+    min-height: 200px;
   }
 }
