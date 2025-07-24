@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* shared styles */
+.flex {
+  display: flex;
+}
+.dark-1 {
+  color: rgba(37, 36, 50, 1);
+}
+.light-1 {
+  color: rgba(137, 135, 161, 1);
+}
+.dark-2 {
+  color: #000000;
+}
+.orange {
+  color: rgba(233, 90, 8, 1);
+}
+.light-dark-5 {
+  color: rgba(0, 0, 0, 0.5);
+}
+.primary-btn {
+  background-color: rgba(233, 90, 8, 1);
+  color: #ffffff;
+  width: 100%;
+  border: none;
+  height: 3.1rem;
+}
+
+/* header section styles */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.basic-menu li a {
+  text-decoration: none;
+}
+.basic-menu li {
+  list-style: none;
+  margin-right: 3rem;
+}
+.cart-btn a {
+  text-decoration: none;
+}
+.intro-banner {
+  justify-content: space-between;
+  margin: 120px auto;
+  max-width: 1140px;
+  align-items: end;
+}
+.intro-title,
+.intro-desc {
+  margin-bottom: 0.8rem;
+}
+.intro-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.intro-desc {
+  font-size: 1.3rem;
+}
+.hero-img {
+  width: 100%;
+}
+
+/* Plants buy section */
+.plants-section-title {
+  font-size: 3.1rem;
+  font-weight: bold;
+}
+.plants-section {
+  text-align: center;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.plants-buy-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.plants-section-title,
+.plants-section-desc {
+  margin-bottom: 35px;
+}
+
+.card-img,
+.plant-name,
+.plant-price {
+  margin-bottom: 0.8rem;
+}
+.card-img {
+  width: 100%;
+}
+/* Responsive Styles for mobile Device */
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 0 20px;
+  }
+  .intro-banner {
+    flex-direction: column-reverse;
+  }
+  .nav-logo img {
+    width: 50%;
+  }
+  .intro-info {
+    margin-top: 50px;
+  }
+  .intro-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .intro-desc {
+    font-size: 1rem;
+  }
+  .basic-menu {
+    display: none;
+  }
+  .plants-buy-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
