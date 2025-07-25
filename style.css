@@ -26,7 +26,6 @@
 }
 .primary-btn {
   background-color: rgba(233, 90, 8, 1);
-  color: #ffffff;
   width: 100%;
   border: none;
   height: 3.1rem;
@@ -93,7 +92,7 @@
 .card-img,
 .plant-name,
 .plant-price {
-  margin-bottom: 0.8rem;
+  margin-bottom: 20px;
 }
 .card-img {
   width: 100%;
@@ -103,23 +102,40 @@
 .flower-plant-lover-section {
   justify-content: space-between;
   max-width: 1140px;
-  margin: 140px auto;
-  gap: 5.75rem;
+  margin: 40px auto;
+  gap: 40px;
+  padding: 40px 20px;
 }
-.flower-store-img {
+.flower-store {
+  position: relative;
+  width: 45%;
+}
+
+.badge {
+  position: absolute;
+  top: -90px;
+  right: -100px;
+  max-width: 220px;
+}
+
+.flower-store img {
   width: 100%;
 }
+.flower-plant-lover-section-desc {
+  width: 45%;
+  margin-top: 40px;
+}
+
 .plant-lover-section-title {
-  font-size: 3.1rem;
+  font-size: 3rem;
   font-weight: bold;
-  max-width: 540px;
 }
 .lover-desc {
   padding-left: 30px;
   font-size: 1.2rem;
 }
 .lover-desc li {
-  margin-top: 50px;
+  margin-top: 3rem;
 }
 
 /* latest-deal-section */
@@ -141,7 +157,6 @@
 }
 
 .promo-container {
-  display: flex;
   max-width: 1140px;
   margin: 40px auto;
   gap: 20px;
@@ -150,7 +165,6 @@
 
 .left-column {
   width: 33.33%;
-  display: flex;
   flex-direction: column;
   gap: 20px;
 }
@@ -163,7 +177,6 @@
   border-radius: 14px;
   height: 200px;
   color: white;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -202,24 +215,32 @@
   height: 535px;
   text-align: center;
   align-content: center;
-  position: relative;
 }
 .join-title {
   font-size: 3.1rem;
   margin-bottom: 30px;
   font-weight: bold;
 }
-.input-button input {
+.input-button {
+  justify-content: center;
+  align-items: center;
+}
+.input-button .email {
   height: 3.1rem;
   width: 45%;
   padding-left: 50px;
 }
-.input-button button {
-  height: 3.2rem;
+.input-button input[type="submit"] {
+  height: 3.3rem;
   background-color: rgba(233, 90, 8, 1);
   border: none;
   width: 25%;
   font-size: 1rem;
+}
+
+.input-button input:focus {
+  outline: none;
+  border: none;
 }
 
 /* footer section style */
@@ -286,8 +307,15 @@
   .flower-plant-lover-section {
     flex-direction: column;
   }
+  .badge {
+    display: none;
+  }
   .plant-lover-section-title {
     font-size: 2.5rem;
+  }
+  .flower-store,
+  .flower-plant-lover-section-desc {
+    width: 100%;
   }
   .promo-container {
     flex-direction: column;
